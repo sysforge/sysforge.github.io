@@ -14788,10 +14788,10 @@ webpackJsonp([114276838955818,60335399758886],[
 	    var updated = (0, _moment2.default)().format('MMM Do YYYY, h:mm a');
 	    //console.log(isSafari+'useragent::>> isSafari: '+isSafari+' isEdge: '+isEdge+' isOpera: '+isOpera+' isFirefox: '+isFirefox+' i sIE: '+isIE+' isChrome: '+isChrome );
 	    var voicePanel = null;
-	    if (isChrome) {
-	      var VoiceIO = __webpack_require__(575);
-	      voicePanel = _react2.default.createElement(VoiceIO, null);
-	    }
+	    //if (isChrome) {
+	    var VoiceIO = __webpack_require__(575);
+	    voicePanel = _react2.default.createElement(VoiceIO, null);
+	    //}
 	    return _react2.default.createElement(
 	      'footer',
 	      { className: 'site-footer' },
@@ -14822,7 +14822,7 @@ webpackJsonp([114276838955818,60335399758886],[
 	                  'a',
 	                  { className: 'feedback', href: '/contact' },
 	                  _react2.default.createElement('img', { src: _opinionlabOrange2.default, alt: 'Feedback' }),
-	                  'Disqus Feedback'
+	                  'Feedback'
 	                ),
 	                _react2.default.createElement(
 	                  _gatsbyLink2.default,
@@ -14924,9 +14924,14 @@ webpackJsonp([114276838955818,60335399758886],[
 	
 	        // Here you can load all the commands that you want to Artyom
 	        return Artyom.addCommands([{
-	            indexes: ["Hello", "Shandilya", "chandelier", "chandelier", "tanishq", "sweta"],
+	            indexes: ["Hey", "Hi", "chandelier", "chandelier", "hello", "Shandilya"],
 	            action: function action() {
 	                Artyom.say("Madhav Shandilya is Cloud Solution Architect since 13 Year. Solutioned Force.com Sales, Service, Community Cloud CRM Solution. Polyglot Developer with Apex, Lightening, Sql, JavaScripts, Kotlin, Java, ESB. OData, Informatica Cloud & API Integration Expert. Security Implementation with SSO, OAuth, OpenID, 2Way SSL, SAML. Offline Data Sync, Build and Process Automation expert for CLoud Architecture");
+	            }
+	        }, {
+	            indexes: ["terminate", "dominate", "bye", "see you later"],
+	            action: function action() {
+	                Artyom.say("Thanks for visiting the site.. seee you next time");
 	            }
 	        }]);
 	    };
@@ -16929,7 +16934,7 @@ webpackJsonp([114276838955818,60335399758886],[
 	    Jarvis.initialize({
 	      lang: "en-GB",
 	      debug: false,
-	      continuous: false,
+	      continuous: true,
 	      soundex: true,
 	      listen: true
 	    }).then(function () {
@@ -17078,7 +17083,7 @@ webpackJsonp([114276838955818,60335399758886],[
 	      'div',
 	      null,
 	      _react2.default.createElement(_reactHelmet2.default, {
-	        title: 'Sysforge: Madhav Shandilya\'s Portfolio!',
+	        title: 'Sysforge (M Shandilya): Cloud Solution Architect\'s, Portfolio!',
 	        meta: [{ name: 'description', content: 'M Shandilya Portfolio' }, { name: 'keywords', content: 'Madhav Shandilya, Github, Sysforge' }, { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }]
 	      }),
 	      _react2.default.createElement(
@@ -48343,4 +48348,4 @@ webpackJsonp([114276838955818,60335399758886],[
 
 /***/ })
 ]);
-//# sourceMappingURL=component---src-layouts-index-js-66329181b7e9566f0702.js.map
+//# sourceMappingURL=component---src-layouts-index-js-1344cdb0b9fac74028b8.js.map
